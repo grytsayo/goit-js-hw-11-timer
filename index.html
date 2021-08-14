@@ -6,31 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>goit-js-hw-11-timer</title>
     <style>
-        *,
-        *::before,
-        *::after {
-          box-sizing: border-box;
-        }
-        body {
-          font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
-          line-height: 1.5;
-          color: #2a2a2a;
-          font-size: 96px;
-          background-image: url(./image.jpg);
-          background-size: cover;
-        }
-        .timer {
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
-          color: #31d13e;
-        }
+       * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: baseline;
+  background-image: url(./newJob.jpg);
+  background-size: cover;
+  display: flex;
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+    color: rgb(109, 24, 9); 
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 10rem;
+  background-color: rgb(143, 248, 148);
+
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-weight: bolder;
+
+  font-size: 3rem;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 8rem;
+  background-color: rgb(143, 248, 148);
+
+}
     </style>
   </head>
   <body>
 
-    <div class="timer" id="timer-1">
+    <!-- <div class="timer" id="timer-1">
       <div class="field">
           <span class="value" data-value="days">11</span>
           <span class="label">Days</span>
@@ -50,6 +88,18 @@
           <span class="value" data-value="secs">11</span>
           <span class="label">Seconds</span>
       </div>
+  </div> -->
+
+  <div class="container">
+    <h1 id="headline">Time left to my first day at:</h1>
+    <div id="countdown">
+      <ul>
+        <li><span class="value" data-value="days">11</span></li>
+        <li><span class="value" data-value="hours"></span></li>
+        <li> <span class="value" data-value="mins">11</span></li>
+        <li><span class="value" data-value="secs">11</span></li>
+      </ul>
+    </div>
   </div>
 
     <script src="./timer.js"></script>

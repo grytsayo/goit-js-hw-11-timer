@@ -45,7 +45,7 @@ const refs = {
   }
   
   const timer = new countdownTimer({
-    targetDate: new Date('Dec 31, 2021'),
+    targetDate: new Date('Feb 28, 2022'),
     onTick: updateClockface,
   });
   
